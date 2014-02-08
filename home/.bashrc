@@ -5,9 +5,8 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-export EDITOR="nano"
+export EDITOR="vim"
 
-alias artisan="php artisan"
-alias composer="php composer.phar"
-alias snipping="gnome-screenshot --area"
-alias c="cd .."
+alias ll="ls -l"
+alias la="clear && ls -la"
+alias ..="cd .."
