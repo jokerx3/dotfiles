@@ -1,0 +1,35 @@
+#ctrl+a ? Displays commands and its defaults (VERY important)
+#ctrl+a : Enter to the command prompt of screen
+#ctrl+a " Window list
+#ctrl+a 0 opens window 0
+#ctrl+a A Rename the current window
+#ctrl+a a Sends ctrl+a to the current window
+#ctrl+a c Create a new window (with shell)
+#ctrl+a S Split current region into two regions
+#ctrl+a tab Switch the input focus to the next region
+#ctrl+a ctrl+a Toggle between current and previous region
+#ctrl+a Esc Enter Copy Mode (use enter to select a range of text)
+#ctrl+a ] Paste text
+#ctrl+a Q Close all regions but the current one
+#ctrl+a X Close the current region
+#ctrl+a d Detach from the current screen session, and leave it running. Use screen -r to resume
+
+# set terminal to 256color
+# term xterm-256color #alternative way
+# term screen-256color
+
+# enables unicode chars
+#term rxvt-unicode-256color
+
+# a more fany statusbar
+hardstatus off
+hardstatus alwayslastline
+hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %m-%d %{W} %c %{g}]'
+
+startup_message off
+
+# fix for mc hanger
+altscreen on
+
+# fix for statusbar text 'bash' only
+windowlist string "%4n %h%=%f"
